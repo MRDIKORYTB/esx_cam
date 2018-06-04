@@ -38,7 +38,7 @@ AddEventHandler("Cam:ToggleCam", function()
         TaskPlayAnim(GetPlayerPed(PlayerId()), camanimDict, camanimName, 1.0, -1, -1, 50, 0, 0, 0, 0)
         cam_net = netid
         holdingCam = true
-		DisplayNotification("To enter camera mode press ~INPUT_PICKUP~ ")
+		DisplayNotification("Appuyez sur ~INPUT_PICKUP~ pour commencer a flimer")
     else
         ClearPedSecondaryTask(GetPlayerPed(PlayerId()))
         DetachEntity(NetToObj(cam_net), 1, 1)
